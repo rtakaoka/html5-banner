@@ -17,8 +17,6 @@ p {
 }
 
 #ad-wrapper {
-  /* border: 1px solid red; */
-  /* Only for debugging */
   background: linear-gradient(-45deg, #4aea9f, #3389fe, #cb47ee, #ef2b8e);
   background-size: 400% 400%;
   position: relative;
