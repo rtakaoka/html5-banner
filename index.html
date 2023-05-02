@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="ad.size" content="width=300,height=250">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    var clickTag = "https://ipghealth.com"
+
+    const setClickTag = function() {
+      let query = window.location.search.substring(1);
+      let params = new URLSearchParams(query);
+      clickTag = params.get("clickTag");
+    }()
+  </script>
+</head>
+
+<body>
+  <div id="ad-wrapper" width="300" height="250">
+    <img src="./assets/ad-image-bg.jpg" alt="Background with Studio RX Professionals Working" id="ad-image-bg">
+    <p id="ad-title">We are</p>
+    <p id="ad-text-1" class="ad-text">obsessed with creating novel marketing solutions.</p>
+    <p id="ad-text-2" class="ad-text">obsessed with doing what's right.</p>
+    <p id="ad-text-3" class="ad-text">obsessed with health.</p>
+    <p id="ad-text-4" class="ad-text">IPG HEALTH</p>
+    <p id="ad-cta" class="cta">Get To Know Us!</p>
+  </div>
+  <script>
+    document.getElementById("ad-wrapper").addEventListener("click", () => { window.open(clickTag, "_blank")});
+  </script>
+</body>
+
+</html>
