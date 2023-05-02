@@ -50,4 +50,11 @@ Now it's time to code!
 
 ## 6. Deploy to the host service
 - Created a [repository on GitHub](https://github.com/rtakaoka/html5-banner)
-- Deployed the project on [Netlify](https://netlify.com) - [Go to the project](https://rtakaoka-html5-banner.netlify.app/)
+- Deployed the project on [Netlify](https://netlify.com) - [Go to the published project](https://rtakaoka-html5-banner.netlify.app/)
+
+## Important Notes
+If the banner is opened through the base URL <https://rtakaoka-html5-banner.netlify.app> without any query string, the clickTag will be <https://ipghealth.com>.
+
+To use another clickTag, please add a query string like `?clickTag=https://google.com`, the final URL becomes <https://rtakaoka-html5-banner.netlify.app?clickTag=https://google.com>. With this implementation, the click action will redirect the user to <https://google.com>.
+
+The banner also supports utm query strings like UTM_SOURCE, UTM_CAMPAIGN, UTM_MEDIUM and so on. i.e. <https://rtakaoka-html5-banner.netlify.app?clickTag=https://amazon.com?utm_campaign=development_test>
