@@ -15,7 +15,7 @@
     const setClickTag = function() {
       let query = window.location.search.substring(1);
       let params = new URLSearchParams(query);
-      clickTag = params.get("clickTag");
+      clickTag = params.get("clickTag") || clickTag;
     }()
   </script>
 </head>
